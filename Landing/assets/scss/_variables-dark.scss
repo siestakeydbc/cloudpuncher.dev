@@ -1,0 +1,92 @@
+// // Dark mode //
+
+:root {
+    [data-bs-theme="dark"] {
+        --bs-body-bg: #000;
+        --bs-light-rgb: 9, 10, 12;
+        --bs-light: #090a0c;
+        --bs-border-color: #6c757d33;
+        --bs-border-color-translucent: #292e2e;
+        --bs-heading-color: #dee2e6;
+        --bs-box-shadow: #111313;
+        --bs-accordion-btn-color: var(--bs-body-color);
+
+        .navbar-brand {
+            .logo-dark {
+                display: none;
+            }
+
+            .logo-light {
+                display: inline-block;
+            }
+        }
+
+        .horizontal-nav {
+            .horizontal-menu {
+                &>li>a {
+                    color: var(--bs-body-color);
+                }
+
+                .dropdown-menu li a {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+
+        .home_first {
+            background-image: none;
+            background-image: url(../images/home-2-dark.png);
+        }
+
+        .price_name {
+            h6 {
+                color: rgb(255 255 255 / 81%);
+            }
+        }
+
+        .price_divider {
+            background-color: rgba(239, 239, 239, 0.17);
+        }
+
+        .price_features {
+            color: rgba(255, 255, 255, 0.77);
+        }
+
+        .bg_sec_features {
+            background-image: none;
+        }
+
+        .home_four {
+            .bg-over-img {
+                background-image: none;
+                background-image: url("../images/hero-4-bg-dark.png");
+            }
+        }
+
+        .bg-page-head {
+            background-image: none;
+            background-image: url("../images/bg-pages-dark.png");
+        }
+
+        .mdi-weather-night {
+            display: none;
+        }
+
+        .mdi-weather-sunny {
+            display: inline-block;
+        }
+
+        svg path {
+            fill: #000;
+        }
+
+        .footer {
+            background-color: #090a0c !important;
+        }
+        .bg-white {
+            background-color: #000 !important;
+        }
+    }
+}
+
+// Dark mode //

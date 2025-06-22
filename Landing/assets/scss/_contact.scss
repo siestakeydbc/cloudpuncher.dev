@@ -1,0 +1,50 @@
+.form-kerri {
+    .form-control {
+        box-shadow: none !important;
+        height: 50px;
+        margin-bottom: 14px;
+        border: 2px solid var(--bs-border-color);
+
+        &:focus {
+            border-color: var(--#{$prefix}primary) !important;
+        }
+    }
+
+    textarea.form-control {
+        height: auto;
+    }
+}
+
+.contact_detail-title {
+    font-size: 18px;
+}
+
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: #ec5f79;
+}
+
+.error_msg {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #ec5f79;
+    font-weight: 700;
+}
+
+.gig_loader {
+    display: none;
+}
+
+#success_msg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#success_msg {
+    h3 {
+        color: #64d674;
+        font-size: 22px;
+    }
+}

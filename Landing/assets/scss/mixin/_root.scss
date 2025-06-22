@@ -1,0 +1,127 @@
+:root {
+    @each $color, $value in $grays {
+        --#{$prefix}gray-#{$color}: #{$value};
+    }
+
+    @each $color, $value in $theme-colors {
+        --#{$prefix}#{$color}: #{$value};
+        --#{$prefix}#{$color}-rgb: #{#{red($value)},
+        #{green($value)},
+        #{blue($value)}
+    }
+
+    ;
+}
+
+@each $color, $value in $theme-colors-text {
+    --#{$prefix}#{$color}-text-emphasis: #{$value};
+}
+
+@each $color, $value in $theme-colors-bg-subtle {
+    --#{$prefix}#{$color}-bg-subtle: #{$value};
+}
+
+@each $color, $value in $theme-colors-border-subtle {
+    --#{$prefix}#{$color}-border-subtle: #{$value};
+}
+
+--#{$prefix}-border-color: #{$border-color};
+--#{$prefix}-body-color: #{$body-color};
+--#{$prefix}-body-color-rgb: #{#{red($body-color)},
+#{green($body-color)},
+#{blue($body-color)}
+}
+
+;
+
+--#{$prefix}-body-bg: #{$body-bg};
+--#{$prefix}-body-bg-rgb: #{#{red($body-bg)},
+#{green($body-bg)},
+#{blue($body-bg)}
+}
+
+;
+
+--#{$prefix}-body-secondary-color: #{$body-secondary-color};
+--#{$prefix}-body-secondary-color-rgb: #{#{red($body-secondary-color)},
+#{green($body-secondary-color)},
+#{blue($body-secondary-color)}
+}
+
+;
+
+--#{$prefix}-body-tertiary-color: #{$body-tertiary-color};
+--#{$prefix}-body-tertiary-color-rgb: #{#{red($body-tertiary-color)},
+#{green($body-tertiary-color)},
+#{blue($body-tertiary-color)}
+}
+
+;
+
+--#{$prefix}-body-tertiary-bg: #{$body-tertiary-bg};
+--#{$prefix}-body-tertiary-bg-rgb: #{#{red($body-tertiary-bg)},
+#{green($body-tertiary-bg)},
+#{blue($body-tertiary-bg)}
+}
+
+;
+
+--#{$prefix}-body-emphasis-color: #{$body-emphasis-color};
+--#{$prefix}-body-emphasis-color-rgb: #{#{red($body-emphasis-color)},
+#{green($body-emphasis-color)},
+#{blue($body-emphasis-color)}
+}
+
+;
+
+--#{$prefix}font-sans-serif: #{$font-family-base};
+
+}
+
+[data-color="red"] {
+    --#{$prefix}primary: #e65f78;
+    --#{$prefix}primary-text-emphasis: rgb(232, 81, 108);
+    --#{$prefix}primary-border-subtle: #e65f78;
+    --#{$prefix}primary-rgb: 232, 95, 120;
+    --#{$prefix}primary-bg-subtle: #e65f78;
+}
+
+[data-color="sky"] {
+    --#{$prefix}primary: #37b8df;
+    --#{$prefix}primary-text-emphasis: rgb(39, 168, 212);
+    --#{$prefix}primary-border-subtle: #37b8df;
+    --#{$prefix}primary-rgb: 55, 184, 223;
+    --#{$prefix}primary-bg-subtle: #37b8df;
+}
+
+[data-color="green"] {
+    --#{$prefix}primary: #31b164;
+    --#{$prefix}primary-text-emphasis: rgb(40, 139, 40);
+    --#{$prefix}primary-border-subtle: #31b164;
+    --#{$prefix}primary-rgb: 26, 149, 26;
+    --#{$prefix}primary-bg-subtle: #31b164;
+}
+
+[data-color="blue"] {
+    --#{$prefix}primary: #5d69f6;
+    --#{$prefix}primary-text-emphasis: rgb(62, 75, 219);
+    --#{$prefix}primary-border: #5d69f6;
+    --#{$prefix}primary-rgb: 93, 105, 246;
+    --#{$prefix}primary-bg-subtle: #5d69f6;
+}
+
+[data-color="skyblue"] {
+    --#{$prefix}primary: #87ceeb;
+    --#{$prefix}primary-text-emphasis: rgb(114, 203, 238);
+    --#{$prefix}primary-border-subtle: #87ceeb;
+    --#{$prefix}primary-rgb: 151, 221, 246;
+    --#{$prefix}primary-bg-subtle: #87ceeb;
+}
+
+[data-color="yellow"] {
+    --#{$prefix}primary: #f2b31a;
+    --#{$prefix}primary-text-emphasis: rgb(252, 181, 15);
+    --#{$prefix}primary-border-subtle: #f2b31a;
+    --#{$prefix}primary-rgb: 245, 179, 26;
+    --#{$prefix}primary-bg-subtle: #f2b31a;
+}
