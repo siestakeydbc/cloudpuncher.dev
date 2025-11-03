@@ -1,0 +1,38 @@
+
+.services-boxes {
+    border: 1px solid var(--bs-border-color);
+}
+
+.services-boxes .services-boxes-icon i {
+    font-size: 44px;
+}
+
+.services-boxes .services-title-border {
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    transition: all 0.5s;
+    background-color: var(--#{$prefix}primary) !important;
+}
+
+.services-boxes:hover .services-title-border {
+    width: 60px;
+}
+
+.service-box {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+}
+
+.services-boxes h5 {
+    font-weight: 600;
+}
+
+.service-box .service-content h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-box .service-content p {
+    font-size: 15px;
+}

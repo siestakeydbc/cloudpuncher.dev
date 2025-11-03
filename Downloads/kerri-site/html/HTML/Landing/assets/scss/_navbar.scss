@@ -1,0 +1,124 @@
+// // //
+// // //  navbar scss
+
+.custom-nav {
+    background-color: transparent;
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+
+    .navbar-nav {
+        li {
+            a {
+                color: $white !important;
+                font-size: 15px;
+                background-color: transparent !important;
+                margin: 0 7px;
+                letter-spacing: 0.05em;
+                line-height: 24px;
+                transition: all 0.5s;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .navbar-brand {
+        .logo-light {
+            height: 27px;
+        }
+
+        .logo-dark {
+            height: 27px;
+        }
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+
+        &.active,
+        &:focus,
+        &:hover,
+        &:active {
+            color: var(--#{$prefix}primary) !important;
+        }
+    }
+}
+
+.logo {
+    .logo-light {
+        display: inline-block;
+    }
+}
+
+.stickyadd {
+    .logo {
+        .logo-dark {
+            display: inline-block;
+        }
+
+        .logo-light {
+            display: none;
+        }
+    }
+}
+
+.logo {
+    .logo-dark {
+        display: none;
+    }
+}
+
+.custom-nav {
+    .navbar-brand {
+        color: $white !important;
+        text-transform: uppercase;
+    }
+}
+
+.custom-nav {
+    .navbar-toggler {
+        color: $white;
+        font-size: 35px;
+        padding: 0px;
+    }
+}
+
+.custom-nav.stickyadd {
+    background-color: var(--bs-body-bg) !important;
+    padding: 15px 0px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 5%);
+}
+
+.custom-nav.stickyadd {
+    .navbar-nav {
+        li {
+            a {
+                color: var(--black) !important;
+            }
+        }
+
+        .active {
+            color: var(--#{$prefix}primary) !important;
+        }
+    }
+}
+
+[data-bs-theme=dark] {
+    @each $color, $value in $theme-colors {
+        .stickyadd {
+            .logo {
+                .logo-light {
+                    display: block;
+                }
+
+                .logo-dark {
+                    display: none;
+                }
+            }
+        }
+    }
+}
