@@ -32,7 +32,14 @@ background-size: cover;
       text-decoration: none;
     }
     .btn:hover { border-color: rgba(255,255,255,.7); }
-    .small { opacity: .7; margin-top: 18px; font-size: 14px; }
+    .small { opacity: .7; margin-top: 18px; font-size: 14px; body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background: rgba(0,0,0,.35);
+  pointer-events:none;
+}
+.wrap{ position:relative; z-index:1; }}
   </style>
 </head>
 <body>
