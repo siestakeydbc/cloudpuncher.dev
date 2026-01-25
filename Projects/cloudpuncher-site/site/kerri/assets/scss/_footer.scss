@@ -1,0 +1,45 @@
+/*FOOTER*/
+
+.footer {
+    padding: 70px 0px;
+    background-color: #212121  !important;
+
+    .footer-alt {
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            li {
+                a {
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                    background-color: rgba(241, 241, 241, 0.08);
+                    width: 44px;
+                    height: 44px;
+                    display: block;
+                    font-size: 20px;
+                    line-height: 44px;
+                    text-align: center;
+
+                    i {
+                        color: #ababab;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            color: var(--#{$prefix}primary) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright_content {
+    color: #ababab;
+
+    &:hover {
+        color: #ababab;
+    }
+}

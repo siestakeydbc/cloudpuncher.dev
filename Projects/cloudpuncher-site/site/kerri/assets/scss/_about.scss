@@ -1,0 +1,23 @@
+//  About page scss
+
+.about-social {
+    li {
+        a {
+            color: var(--black);
+            display: inline-block;
+            height: 42px;
+            width: 42px;
+            font-size: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--bs-border-color);
+            line-height: 38px;
+            transition: all 0.5s;
+            text-align: center;
+
+            &:hover {
+                color: var(--#{$prefix}primary) !important;
+                border-color: var(--#{$prefix}primary) !important;
+            }
+        }
+    }
+}

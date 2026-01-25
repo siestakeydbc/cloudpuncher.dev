@@ -1,0 +1,29 @@
+/*
+/*-----------------------------------------------------------
+* Template Name    : Kerri | Responsive Bootstrap 5 Personal Template
+* Author           : SRBThemes
+* Version          : 4.0.0
+* Created          : March 2024
+* File Description : Main css file of the template
+*------------------------------------------------------------
+*/
+
+@import "variables";
+@import "mixin/maps";
+@import "mixin/root";
+@import "_variables-dark";
+//componets
+@import "componets/helper";
+@import "componets/button";
+
+
+@import "about";
+@import "contact";
+@import "footer";
+@import "index";
+@import "login";
+@import "navbar";
+@import "responsive";
+@import "rtl";
+@import "service";
+@import "testimonial";

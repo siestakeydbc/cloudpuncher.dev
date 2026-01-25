@@ -1,0 +1,110 @@
+:root {
+  /* Executive palette */
+  --bg: #070a10;
+  --panel: rgba(255, 255, 255, 0.04);
+  --panel-2: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-2: rgba(255, 255, 255, 0.16);
+
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.70);
+  --muted-2: rgba(255, 255, 255, 0.58);
+
+  /* Single accent (tight, confident) */
+  --accent: #7c5cff;
+
+  /* Rhythm */
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global typography baseline */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Links should not scream */
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(124, 92, 255, 0.35);
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.98);
+  border-bottom-color: rgba(124, 92, 255, 0.75);
+}
+
+/* Utility classes we can use in JSX (pure CSS, no Tailwind dependency) */
+.container {
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  margin-bottom: 10px;
+}
+
+.panel {
+  background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.panel-inner {
+  padding: 22px;
+}
+
+.hr {
+  height: 1px;
+  background: var(--border);
+  margin: 18px 0;
+}
+
+.small {
+  font-size: 14px;
+  color: var(--muted-2);
+}

@@ -1,0 +1,188 @@
+// rtl
+
+[dir="rtl"] {
+    @media (min-width: 992px) {
+        .horizontal-nav {
+            .horizontal-menu {
+                float: left;
+
+                >li {
+                    float: right;
+                }
+
+                >.dropdown {
+                    >.dropdown-toggle {
+                        &:after {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .dropdown {
+                    .dropdown-menu {
+                        .dropdown-menu {
+                            right: 100%;
+                            margin-right: 12px;
+
+                            &:before {
+                                right: -8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .horizontal-menu {
+                .dropdown {
+                    .dropdown-menu {
+                        .dropdown {
+                            >.dropdown-toggle {
+                                &:after {
+                                    float: left;
+                                    left: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .mega-menu.dropdown-menu {
+                        &:before {
+                            right: auto;
+                            left: 31%;
+                        }
+                    }
+                }
+
+                .mega-menu-col {
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .home_fir_fea_list {
+        p {
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .accordion-button {
+        &::after {
+            left: 22px;
+        }
+    }
+
+    .rtl-ltr-btn {
+        .ltr {
+            display: inline-block;
+        }
+
+        .rtl {
+            display: none;
+        }
+    }
+
+    [type=email] {
+        direction: rtl;
+    }
+
+    .subcribe_foot {
+        form {
+            button {
+                right: auto;
+                left: 3px;
+            }
+
+            input {
+                padding-left: 150px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .sub_sec_third,
+    .footer_sub_third {
+        form {
+            button {
+                right: auto !important;
+                left: 3px;
+            }
+
+            input {
+                padding-right: 20px !important;
+                padding-left: 150px !important;
+            }
+        }
+    }
+
+    .features {
+        .features-desc {
+            margin-right: 8%;
+        }
+    }
+
+    .footer_third {
+        .footer_sub_third {
+            form {
+                button {
+                    right: auto !important;
+                    left: 3px !important;
+                }
+
+                input {
+                    padding-left: 150px;
+                    padding-right: 20px
+                }
+            }
+        }
+    }
+
+    .featres_box_images .features_content_img .icon_features .icon_box i {
+        margin-left: 12px;
+        margin-right: auto;
+
+
+    }
+
+    .horizontal-nav .horizontal-menu .dropdown .dropdown-menu .dropdown>.dropdown-toggle:after {
+        float: left;
+        content: "\e64a";
+        left: 12px;
+        right: auto;
+    }
+
+    .horizontal-nav .dropdown-menu:before {
+        left: auto !important;
+        right: 25px;
+    }
+
+    .four_sub_sec {
+        .form-inline {
+            .form-group {
+                .form-control {
+                    margin-left: 8px;
+                    margin-right: 0;
+                }
+
+                i {
+                    left: auto;
+                    right: 16px;
+                }
+            }
+        }
+    }
+
+    #color-switcher {
+        right: -189px;
+        left: auto ;
+
+        a.settings {
+            left: -40px !important;
+            right: auto !important;
+            border-radius: 5px 0px 0px 5px !important;
+        }
+
+    }
+}
