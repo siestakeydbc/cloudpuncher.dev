@@ -71,7 +71,7 @@ export default function About() {
             GitHub
           </a>
           
-            <a href="https://www.linkedin.com/in/davidbrookscox/"
+            <a href="https://linkedin.com/in/davidbrookscox"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg border border-neutral-700/70 bg-neutral-900/30 px-4 py-2 text-xs text-neutral-100 hover:border-neutral-600/60 hover:bg-neutral-900/45"
