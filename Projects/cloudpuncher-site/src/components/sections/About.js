@@ -79,10 +79,10 @@ export default function About() {
             LinkedIn
           </a>
           
-           <a href="mailto:dc.cybersecurity@protonmail.com"
+           <a href="mailto:dc.pentester@protonmail.com"
             className="rounded-lg border border-neutral-700/70 bg-neutral-900/30 px-4 py-2 text-xs text-neutral-100 hover:border-neutral-600/60 hover:bg-neutral-900/45"
           >
-            Email
+          dc.pentester@protonmail.com
           </a>
         </div>
       </div>
